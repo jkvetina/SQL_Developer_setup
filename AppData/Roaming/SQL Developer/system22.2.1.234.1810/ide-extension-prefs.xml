@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ide:extension-preferences xmlns:ide="http://xmlns.oracle.com/ide/hash">
+   <list n="disabledExtensions">
+      <string v="oracle.sqldeveloper.dbcart"/>
+      <string v="oracle.sqldeveloper.migration.db2"/>
+      <string v="vcs-git-support"/>
+      <string v="oracle.sqldeveloper.migration.application"/>
+      <string v="oracle.sqldeveloper.hadoopconnectors"/>
+      <string v="oracle.olap"/>
+      <string v="oracle.sqldeveloper.rdfgraph"/>
+      <string v="oracle.sqldeveloper.xmlschema"/>
+      <string v="oracle.sqldeveloper.migration.sybase"/>
+      <string v="oracle.datamodeler"/>
+      <string v="oracle.sqldeveloper.migration.translation.gui"/>
+      <string v="vcs-subversion-support"/>
+      <string v="oracle.sqldeveloper.pgql"/>
+      <string v="oracle.sqldeveloper.timesten"/>
+      <string v="oracle.sqldeveloper.migration.msaccess"/>
+      <string v="oracle.hcs"/>
+      <string v="oracle.sqldeveloper.migration.mysql"/>
+      <string v="oracle.dmt.dataminer"/>
+      <string v="oracle.sqldeveloper.migration"/>
+      <string v="oracle.sqldeveloper.migration.teradata"/>
+      <string v="oracle.sqldeveloper.migration.postgresql"/>
+      <string v="oracle.sqldeveloper.spatial"/>
+      <string v="oracle.sqldeveloper.migration.sqlserver"/>
+   </list>
+   <list n="featuresToReloadAtStartup">
+      <string v="oracle.sqldeveloper.filenavigator"/>
+      <string v="oracle.sqldeveloper.jdbcproxy"/>
+      <string v="oracle.sqldeveloper.rest"/>
+      <string v="oracle.sqldeveloper.cloud.deployment"/>
+      <string v="oracle.sqldeveloper.scheduler"/>
+      <string v="oracle.sqldeveloper.snippet"/>
+      <string v="oracle.sqldeveloper.cloud"/>
+      <string v="oracle.sqldeveloper.dbanavigator"/>
+      <string v="oracle.sqldeveloper.em_cm"/>
+      <string v="oracle.sqldeveloper.ssh"/>
+   </list>
+</ide:extension-preferences>
