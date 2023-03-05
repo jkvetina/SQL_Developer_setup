@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<rows>
+   <row>
+      <key>func</key>
+      <value>    FUNCTION [function_name] (
+    )
+    RETURN VARCHAR2
+    AS
+        PRAGMA UDF;
+    BEGIN
+        --
+        RETURN NULL;
+    EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        RETURN NULL;
+    WHEN OTHERS THEN
+        core.app.raise_error();
+    END;
+
+</value>
+   </row>
+   <row>
+      <key>proc</key>
+      <value>    PROCEDURE [procedure_name]
+    AS
+        l_scope                 CONSTANT logger_logs.SCOPE%TYPE := core.app.get_caller(2);
+        l_params                logger.tab_param;
+        --
+    BEGIN
+        logger.log ('START', l_scope, null, l_params);
+        --
+        --
+        logger.log ('END', l_scope, null, l_params);
+    EXCEPTION
+    WHEN core.app.app_exception THEN
+        RAISE;
+    WHEN OTHERS THEN
+        core.app.raise_error();
+    END;
+
+</value>
+   </row>
+   <row>
+      <key>with</key>
+      <value>WITH x AS (
+    SELECT /*+ MATERIALIZE */
+        core.app.get_item('ITEM_NAME') AS item_name
+    FROM DUAL
+)
+</value>
+   </row>
+   <row>
+      <key>sel</key>
+      <value>SELECT
+    t.*
+FROM [table_name] t
+ORDER BY 1;
+</value>
+   </row>
+   <row>
+      <key>ins</key>
+      <value>INSERT INTO [table_name] ([columns])
+VALUES (
+    NULL
+);
+</value>
+   </row>
+   <row>
+      <key>upd</key>
+      <value>UPDATE [table_name] t
+SET t.__    = __
+WHERE t.__  = __;
+</value>
+   </row>
+</rows>
+
