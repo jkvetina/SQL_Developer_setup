@@ -8,6 +8,8 @@ http://www.oneoracledeveloper.com/2023/03/sql-developer-tips-13.html
 ## Resources to setup your SQL Developer
 
 - copy AppData to your user home folder on Windows
+  - if you already have some folders and filters in your Connections, you should export them first
+  - reimport after you apply the settings
 - copy STARTUP.sql to your home folder (or elsewhere) and use it in Tools - Preferences - Database - startup script
 - import FORMAT.xml in Tools - Preferences - Code Editor - Format - Advanced Format - Import
 - import SHORTCUTS.xml in Tools - Preferences - Shortcut Keys - Import Shortcuts button at top right
