@@ -192,6 +192,7 @@
       <value n="CART_SCRIPT_SAVE_AS_TYPE" v="0"/>
       <value n="CARTDIR" v=""/>
       <value n="CARTSCRIPTDIR" v=""/>
+      <value n="CASECONVERTER_STATE" v="Upper Keywords, Lower Identifiers"/>
       <value n="DEFAULTPATH" v=""/>
       <value n="DELAYCOMPLETION" v="200"/>
       <value n="DIFF_ENCODING" v="US-ASCII"/>
@@ -295,7 +296,7 @@
       </list>
    </hash>
    <hash n="FontSizeOptions">
-      <value n="fontFamily" v="Monospaced"/>
+      <value n="fontFamily" v="Fira Code"/>
    </hash>
    <hash n="HelpOptions">
       <value n="helpCenterWindowOpen" v="false"/>
@@ -802,7 +803,7 @@
             <value n="styleName" v="plsql-operator-style"/>
             <value n="type" v="style"/>
             <value n="useParentBG" v="true"/>
-            <value n="useParentFG" v="true"/>
+            <value n="useParentFG" v="false"/>
             <value n="useParentFontStyle" v="true"/>
          </hash>
          <hash>
@@ -1458,7 +1459,7 @@
             <value n="useFG" v="true"/>
          </hash>
          <hash>
-            <value n="backgroundRGB" v="-5418241"/>
+            <value n="backgroundRGB" v="-65536"/>
             <value n="enabled" v="true"/>
             <value n="fontStyle" v="0"/>
             <value n="foregroundRGB" v="-1"/>

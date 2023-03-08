@@ -20,6 +20,14 @@
 </value>
    </row>
    <row>
+      <key>ins</key>
+      <value>INSERT INTO [table_name] ([columns])
+VALUES (
+    NULL
+);
+</value>
+   </row>
+   <row>
       <key>proc</key>
       <value>    PROCEDURE [procedure_name]
     AS
@@ -41,28 +49,11 @@
 </value>
    </row>
    <row>
-      <key>with</key>
-      <value>WITH x AS (
-    SELECT /*+ MATERIALIZE */
-        core.app.get_item('ITEM_NAME') AS item_name
-    FROM DUAL
-)
-</value>
-   </row>
-   <row>
       <key>sel</key>
       <value>SELECT
     t.*
 FROM [table_name] t
 ORDER BY 1;
-</value>
-   </row>
-   <row>
-      <key>ins</key>
-      <value>INSERT INTO [table_name] ([columns])
-VALUES (
-    NULL
-);
 </value>
    </row>
    <row>
@@ -72,5 +63,50 @@ SET t.__    = __
 WHERE t.__  = __;
 </value>
    </row>
+   <row>
+      <key>with</key>
+      <value>WITH x AS (
+    SELECT /*+ MATERIALIZE */
+        core.app.get_item('ITEM_NAME') AS item_name
+    FROM DUAL
+)
+</value>
+   </row>
+   <row>
+      <key>out</key>
+      <value>DBMS_OUTPUT.PUT_LINE('[content]');</value>
+   </row>
+   <row>
+      <key>for</key>
+      <value>FOR i IN (
+    [SELECT]
+) LOOP
+    NULL;
+END LOOP;
+</value>
+   </row>
+   <row>
+      <key>list</key>
+      <value>LISTAGG([column_name], ', ') WITHIN GROUP (ORDER BY 1)</value>
+   </row>
+   <row>
+      <key>exc</key>
+      <value>EXCEPTION
+WHEN NO_DATA_FOUND THEN
+    NULL;
+WHEN DUP_VAL_ON_INDEX THEN
+    NULL;
+WHEN OTHERS THEN
+    NULL;
+END;
+</value>
+   </row>
+   <row>
+      <key>raise</key>
+      <value>RAISE_APPLICATION_ERROR(-20000, '[payload]', TRUE);</value>
+   </row>
+   <row>
+      <key>order</key>
+      <value>ORDER BY 1 FETCH FIRST 1 ROWS ONLY</value>
+   </row>
 </rows>
-
